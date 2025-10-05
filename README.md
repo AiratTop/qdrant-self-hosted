@@ -53,6 +53,8 @@ Check out other self-hosted solutions:
 -   [postgresql-self-hosted](https://github.com/AiratTop/postgresql-self-hosted)
 -   [mysql-self-hosted](https://github.com/AiratTop/mysql-self-hosted)
 -   [clickhouse-self-hosted](https://github.com/AiratTop/clickhouse-self-hosted)
+-   [qdrant-self-hosted](https://github.com/AiratTop/qdrant-self-hosted)
+-   [redis-self-hosted](https://github.com/AiratTop/redis-self-hosted)
 -   [n8n-self-hosted](https://github.com/AiratTop/n8n-self-hosted)
 -   [caddy-self-hosted](https://github.com/AiratTop/caddy-self-hosted)
 
