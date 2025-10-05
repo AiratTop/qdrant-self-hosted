@@ -10,6 +10,7 @@ It is configured to connect to a shared Docker network, allowing easy integratio
 -   Data is persisted in a local volume.
 -   Pre-configured for a shared network.
 -   Includes scripts for easy management.
+-   Telemetry is disabled by default.
 
 ## Getting Started
 
