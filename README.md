@@ -1,5 +1,7 @@
 # Qdrant Self-Hosted with Docker
 
+![qdrant-self-hosted](https://repository-images.githubusercontent.com/1070266972/6589ab8c-bfc9-47f5-bead-4a509ebae6dc)
+
 This repository provides a `docker compose` setup to run a self-hosted [Qdrant](https://qdrant.tech/) vector database instance.
 
 It is configured to connect to a shared Docker network, allowing easy integration with other services like [n8n](https://github.com/AiratTop/n8n-self-hosted).
