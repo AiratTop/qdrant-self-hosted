@@ -8,8 +8,8 @@ services:
     ports:
       - '6333:6333'
     environment:
-      - QDRANT__TELEMETRY_DISABLED=true
-      - QDRANT__SERVICE__API_KEY=${QDRANT_API_KEY}
+      QDRANT__TELEMETRY_DISABLED: true
+      QDRANT__SERVICE__API_KEY: ${QDRANT_API_KEY}
     volumes:
       - ./data/qdrant:/qdrant/storage
 networks:
