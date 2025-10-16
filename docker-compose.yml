@@ -11,8 +11,7 @@ services:
     environment:
       QDRANT__TELEMETRY_DISABLED: true
       QDRANT__SERVICE__API_KEY: ${QDRANT_API_KEY}
-      QDRANT__LOG_LEVEL: WARNING
-      QDRANT__LOGGER__LOG_LEVEL: WARNING
+      QDRANT__LOG_LEVEL: WARN
     volumes:
       - ./data/qdrant:/qdrant/storage
 networks:
