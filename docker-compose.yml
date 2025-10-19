@@ -4,7 +4,8 @@ services:
     image: qdrant/qdrant:latest
     container_name: qdrant
     hostname: qdrant
-    networks: ['shared_network']
+    networks:
+      - shared_network
     restart: always
     ports:
       - '6333:6333'
