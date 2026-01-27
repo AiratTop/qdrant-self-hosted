@@ -33,6 +33,7 @@ It is configured to connect to a shared Docker network, allowing easy integratio
     ```
     QDRANT_API_KEY=your-secret-api-key
     ```
+    You can use my Open Source [password generator](https://pass.airat.top) to create a strong password.
 
 4.  **Start the service:**
     ```bash
