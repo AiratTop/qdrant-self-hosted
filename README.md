@@ -9,7 +9,7 @@ It is configured to connect to a shared Docker network, allowing easy integratio
 ## Features
 
 -   Uses the official Qdrant Docker image.
--   Data is persisted in a local volume.
+-   Data is persisted in an external Docker volume (`qdrant-data`).
 -   Pre-configured for a shared network.
 -   Includes scripts for easy management.
 -   Telemetry is disabled by default.
@@ -28,14 +28,24 @@ It is configured to connect to a shared Docker network, allowing easy integratio
     docker network create shared_network
     ```
 
-3.  **Configure environment variables:**
+3.  **Create the Docker volume:**
+    Create the external volume used by `docker-compose.yml`:
+    ```bash
+    ./create-docker-volume.sh
+    ```
+    or:
+    ```bash
+    docker volume create qdrant-data
+    ```
+
+4.  **Configure environment variables:**
     Open the `.env` file and add your Qdrant API key. You can generate a random secure key.
     ```
     QDRANT_API_KEY=your-secret-api-key
     ```
     You can use my Open Source [password generator](https://pass.airat.top) to create a strong password.
 
-4.  **Start the service:**
+5.  **Start the service:**
     ```bash
     docker compose up -d
     ```
@@ -43,6 +53,7 @@ It is configured to connect to a shared Docker network, allowing easy integratio
 ## Usage
 
 -   **Start:** `docker compose up -d`
+-   **Create volume (first run):** `./create-docker-volume.sh`
 -   **Restart:** `./restart-docker.sh`
 -   **Update:** `./update-docker.sh` (Pulls the latest Docker image and restarts)
 
