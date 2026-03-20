@@ -14,9 +14,12 @@ services:
       QDRANT__SERVICE__API_KEY: ${QDRANT_API_KEY}
       QDRANT__LOG_LEVEL: WARN
     volumes:
-      - ./data/qdrant:/qdrant/storage
+      - qdrant-data:/qdrant/storage
 networks:
   shared_network:
     name: shared_network
     driver: bridge
+    external: true
+volumes:
+  qdrant-data:
     external: true
